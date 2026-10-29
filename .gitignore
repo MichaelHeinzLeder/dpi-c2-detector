@@ -3,5 +3,7 @@ cmake-build-*/
 .idea/
 *.pcap
 *.pcapng
+!data/sample.pcap
 *.log
+
 

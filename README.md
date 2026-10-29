@@ -19,6 +19,7 @@ C++20 Deep Packet Inspection (DPI) engine for analyzing network captures (`.pcap
 │   │   └── PcapReader.cpp
 │   └── main.cpp
 └── data/
+    └── sample.pcap
 ```
 
 ## Dependencies
@@ -49,5 +50,8 @@ cmake --build build -j
 Example:
 
 ```bash
-./build/dpi_c2_detector data/capture.pcap
+./build/dpi_c2_detector data/sample.pcap
 ```
+
+> Note: All other `*.pcap` and `*.pcapng` files are ignored via `.gitignore` to prevent committing large or sensitive packet captures.
+
